@@ -13,7 +13,7 @@ if (productionEnv === 'production') {
             if (err) {
                 cb(err);
             } else {
-                var transport = nodemailer.createTransport('SMTP', {
+                var transport = nodemailer.createTransport( {
                     host: app.config.mailer.host,
                     port: app.config.mailer.port,
                     secureConnection: app.config.mailer.secureConnection,
